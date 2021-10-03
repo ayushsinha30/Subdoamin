@@ -1,5 +1,5 @@
 import requests
-import threading
+#import threading
 domain = input("Enter domain: ")
 file = open('wordlist.txt','r')
 content = file.read()
@@ -17,5 +17,5 @@ for subdomain in subdomains:
 	except requests.ConnectionError:
 		pass
 
-thread = threading.Thread(100)
-thread.start()
+#thread = threading.Thread(100)
+#thread.start()
